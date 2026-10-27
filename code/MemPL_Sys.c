@@ -12,7 +12,7 @@ public:
     bool can_accept(unsigned dst_n,
                     unsigned dst_ch) const;
 
-    // 接收来自片上网络的访存请求
+    // 接收来自GPU的memory partition unit的访存请求
     bool push_request(mem_fetch* mf,
                       unsigned dst_n,
                       unsigned dst_ch);
