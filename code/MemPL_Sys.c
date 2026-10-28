@@ -31,6 +31,9 @@ private:
 
     // 已完成请求的队列
     std::queue<mem_fetch*> m_response_queue;
+    
+    // MemPL_Sys中需要一个MemPL_Switch实例，进行内存请求的路由
+    MemPL_Switch m_switch;
 
     // 将 GPU ID 和 HBM 通道号映射到通道索引
     unsigned get_channel_index(
